@@ -10,6 +10,18 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .juxtapose-container {
+  max-width: 100%; /* Maximale Breite */
+  width: 600px; /* Setzt eine feste Breite (anpassbar) */
+  margin: auto; /* Zentriert den Vergleich */
+}
+
+.juxtapose img {
+  width: 100%; /* Bilder passen sich dem Container an */
+  height: auto; /* Höhe bleibt proportional */
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
