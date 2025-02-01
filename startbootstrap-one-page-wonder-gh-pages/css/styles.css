@@ -8263,10 +8263,6 @@ textarea.form-control-lg {
   border-radius: var(--bs-border-radius-2xl) !important;
 }
 
-.rounded-circle {
-  border-radius: 50% !important;
-}
-
 .rounded-pill {
   border-radius: var(--bs-border-radius-pill) !important;
 }
