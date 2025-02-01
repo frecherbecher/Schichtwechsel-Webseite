@@ -1,121 +1,118 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Schichtwechsel Halle-Neustadt: Geschichten eines Viertels</title>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <!-- JuxtaposeJS Stylesheet -->
-        <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
-        <!-- JuxtaposeJS Script -->
-        <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
-            <!-- Juxtapose CSS -->
-            <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
-        
-            <style>
-                .map-container {
-                height: 400px;
-                position: relative;
-                }
-                  
-                .juxtapose-container {
-                    max-width: 100%;
-                    width: 600px;
-                    margin: auto;
-                }
-        
-                .juxtapose img {
-                    width: 100%;
-                    height: auto;
-                }
-            </style>
-        </head>
-        <body>
-        
-            <div class="juxtapose-container">
-                <div class="juxtapose">
-                    <img src="assets/img/Milchbar-archiv.jpg" alt="Vorher">
-                    <img src="assets/img/Milchbar.jpg" alt="Nachher">
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Schichtwechsel Halle-Neustadt: Geschichten eines Viertels</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- JuxtaposeJS Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+    
+    <style>
+        .map-container {
+            height: 400px;
+            position: relative;
+        }
+        .juxtapose-container {
+            max-width: 150%;
+            width: 100%;
+            margin: auto;
+        }
+        .juxtapose img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#page-top">Ein Projekt des Masterstudiengangs Multimedia und Autorschaft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
             </div>
-        
-            <!-- Juxtapose JS -->
-            <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>       
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
             <div class="container px-5">
-                <a class="navbar-brand" href="#page-top">Ein Projekt des Masterstudiengangs Multimedia und Autorschaft</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                </div>
+                <h1 class="masthead-heading mb-0">Schichtwechsel</h1>
+                <h1 class="masthead-heading mb-0">Halle-Neustadt</h1>
+                <h2 class="masthead-subheading mb-0">Geschichten eines Viertels</h2>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="masthead text-center text-white">
-            <div class="masthead-content">
-                <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">Schichtwechsel</h1>
-                    <h1 class="masthead-heading mb-0">Halle-Neustadt</h1>
-                    <h2 class="masthead-subheading mb-0">Geschichten eines Viertels</h2>
-                </div>
-            </div>
-            <div class="bg-circle-1 bg-circle"></div>
-            <div class="bg-circle-2 bg-circle"></div>
-            <div class="bg-circle-3 bg-circle"></div>
-            <div class="bg-circle-4 bg-circle"></div>
-        </header>
-        <!-- Content section 1-->
-        <section id="scroll">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/Milchbar-archiv.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 class="display-4">For those about to rock...</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    
+    <!-- Content section 1-->
+    <section id="scroll">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <div class="juxtapose">
+                            <img src="assets/img/Milchbar-archiv.jpg" alt="Vorher">
+                            <img src="assets/img/Milchbar.jpg" alt="Nachher">
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Content section 2-->
-        <section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="p-5">
-                            <h2 class="display-4">We salute you!</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-                        </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">For those about to rock...</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae!</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    
+    <!-- Content section 2 -->
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <div class="juxtapose">
+                            <img src="assets/img/_Betonbild/Betonbild-Archiv.jpg" alt="Vorher">
+                            <img src="assets/img/_Betonbild/Betonbild.jpg" alt="Nachher">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h2 class="display-4">We salute you!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
         <!-- Content section 3-->
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/03.jpg" alt="..." /></div>
-                    </div>
+                    <div class="p-5">
+                        <div class="juxtapose">
+                            <img src="assets/img/_Betonbild/Betonbild-Archiv.jpg" alt="Vorher">
+                            <img src="assets/img/_Betonbild/Betonbild.jpg" alt="Nachher">
+                        </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4">Let there be rock!</h2>
@@ -125,12 +122,14 @@
                 </div>
             </div>
         </section>
+
         <!-- Content section 4-->
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.jpg" alt="..." /></div>
+                    <div class="juxtapose">
+                        <img src="assets/img/_Betonbild/Betonbild-Archiv.jpg" alt="Vorher">
+                        <img src="assets/img/_Betonbild/Betonbild.jpg" alt="Nachher">
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
@@ -145,8 +144,9 @@
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/03.jpg" alt="..." /></div>
+                    <div class="juxtapose">
+                        <img src="assets/img/_Betonbild/Betonbild-Archiv.jpg" alt="Vorher">
+                        <img src="assets/img/_Betonbild/Betonbild.jpg" alt="Nachher">
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
@@ -161,8 +161,9 @@
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.jpg" alt="..." /></div>
+                    <div class="juxtapose">
+                        <img src="assets/img/_Betonbild/Betonbild-Archiv.jpg" alt="Vorher">
+                        <img src="assets/img/_Betonbild/Betonbild.jpg" alt="Nachher">
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
@@ -177,8 +178,9 @@
             <section>
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6 order-lg-2">
-                            <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/03.jpg" alt="..." /></div>
+                        <div class="juxtapose">
+                            <img src="assets/img/_Betonbild/Betonbild-Archiv.jpg" alt="Vorher">
+                            <img src="assets/img/_Betonbild/Betonbild.jpg" alt="Nachher">
                         </div>
                         <div class="col-lg-6 order-lg-1">
                             <div class="p-5">
@@ -193,8 +195,9 @@
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.jpg" alt="..." /></div>
+                    <div class="juxtapose">
+                        <img src="assets/img/_Betonbild/Betonbild-Archiv.jpg" alt="Vorher">
+                        <img src="assets/img/_Betonbild/Betonbild.jpg" alt="Nachher">
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
@@ -205,14 +208,23 @@
                 </div>
             </div> 
         </section>
-        
+
+                    <!-- JuxtaposeJS Script -->
+    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new juxtapose.JXSlider('.juxtapose');
+        });
+    </script>
 
         <!-- Map-->
         <section>
             <div class="container px-5">
                 <div id="map" style="height: 400px;"></div>
             </div>
-        </section>        
+        </section> 
+        <br>
+        <br>       
 
         <!-- Footer-->
         <footer class="py-5 bg-black">
@@ -231,23 +243,31 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script>
-            var map = L.map('map').setView([51.489, 11.971], 13); // Setze die Koordinaten auf deinen gewünschten Standort
+            var map = L.map('map').setView([51.489, 11.971], 13); // Zentrum der Karte, angepasst auf Halle-Neustadt
         
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
         
             var data = [
-                { coords: [51.489, 11.971], target: '#scroll' }, // Beispiel für einen Bereich
-                { coords: [51.490, 11.972], target: '#anotherSection' } // Füge weitere Zielbereiche hinzu
+                { coords: [51.489, 11.971], target: '#scroll' },
+                { coords: [51.490, 11.972], target: '#anotherSection1' },
+                { coords: [51.491, 11.973], target: '#anotherSection2' },
+                { coords: [51.492, 11.974], target: '#anotherSection3' },
+                { coords: [51.493, 11.975], target: '#anotherSection4' },
+                { coords: [51.494, 11.976], target: '#anotherSection5' },
+                { coords: [51.495, 11.977], target: '#anotherSection6' },
+                { coords: [51.496, 11.978], target: '#anotherSection7' }
             ];
         
             data.forEach(function(item) {
                 var marker = L.marker(item.coords).addTo(map);
                 marker.on('click', function() {
-                    window.location.href = item.target; // Scrollt zur ID des Bereichs
+                    window.location.href = item.target; // Scrollt zur ID des Bereichs auf der Seite
                 });
             });
-        </script>        
+        </script>
+        
+        
     </body>
 </html>

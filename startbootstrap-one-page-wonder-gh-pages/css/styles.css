@@ -12,13 +12,13 @@
  */
 
  .juxtapose-container {
-  max-width: 100%; /* Maximale Breite */
-  width: 600px; /* Setzt eine feste Breite (anpassbar) */
+  max-width: 300%; /* Maximale Breite */
+  width: 1000px; /* Setzt eine feste Breite (anpassbar) */
   margin: auto; /* Zentriert den Vergleich */
 }
 
 .juxtapose img {
-  width: 100%; /* Bilder passen sich dem Container an */
+  width: 300%; /* Bilder passen sich dem Container an */
   height: auto; /* Höhe bleibt proportional */
 }
 
